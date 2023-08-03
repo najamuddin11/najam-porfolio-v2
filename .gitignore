@@ -4,8 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+.env
+/helper/
+/assets/images/portfolio
 
-# testing
+
+# testings
 /coverage
 
 # next.js

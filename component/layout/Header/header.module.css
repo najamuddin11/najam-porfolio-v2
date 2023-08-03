@@ -3,8 +3,20 @@
   min-height: 768px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.secondary_header {
+  height: 50vh;
+  min-height: 450px;
+  /* background: #000; */
+  position: relative;
+  overflow: hidden;
 }
 .header_container {
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +52,7 @@
   background-color: var(--light-purple);
   transition: rotate(0deg);
   position: relative;
+  z-index: 111;
 }
 .header_rightColImg_bg {
   content: "";
@@ -49,10 +62,11 @@
   border-radius: 16px;
   z-index: 0;
   transform: rotate(-10deg);
-  background: var(--purple);
+  background: var(--side-theme-color);
   animation-name: rotate_purple_card;
   animation-duration: 12s;
   animation-iteration-count: infinite;
+  z-index: 111;
 }
 
 @keyframes rotate_purple_card {

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { clearErrors } from "../../../state-management/actions/errors";
 import profilePic from "../../../assets/images/front.png";
 import styles from "./header.module.css";
+import HeaderParticles from "../HeaderParticles";
 const Header = (props) => {
   const { clearErrors } = props;
   useEffect(() => {
@@ -12,11 +13,13 @@ const Header = (props) => {
   }, []);
   return (
     <div className={`${styles.header}`}>
+      <HeaderParticles />
       <div className={`container ${styles.header_container}`}>
         <div className={`${styles.header_leftCol}`}>
-          <h4>MY NAME IS</h4>
+          <h5>MY NAME IS</h5>
           <h1>
-            Najam <span style={{ color: "var(--purple)" }}>Uddin</span>
+            Najam{" "}
+            <span style={{ color: "var(--side-theme-color)" }}>Uddin</span>
           </h1>
           <p>
             Creative front-end developer with more than +5 years of experience

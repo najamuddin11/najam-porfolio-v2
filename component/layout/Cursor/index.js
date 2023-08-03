@@ -55,7 +55,6 @@ const Cursor = (props) => {
     // Handle Link Hovers
     // handleLinkHovers();
     // handleButtonHovers();
-    // handleImagesHovers();
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
       document.removeEventListener("mouseenter", onMouseEnter);
@@ -68,8 +67,8 @@ const Cursor = (props) => {
   }, []);
 
   useEffect(() => {
-    handleImagesHovers();
     handleLinkHovers();
+    handleColorChange();
   }, [cursorEnlarged]);
 
   let { x, y } = mousePosition;
@@ -123,15 +122,14 @@ const Cursor = (props) => {
     if (cursorEnlarged.current) {
       cursorDot.current.style.transform = "translate(-50%, -50%) scale(0.7)";
       cursorDotOutline.current.style.transform =
-        "translate(-50%, -50%) scale(4)";
-      //   cursorDotOutline.current.style.backgroundColor =
-      //     "rgba(var(--text-primary), var(--cursor-outline-shade))";
+        "translate(-50%, -50%) scale(3)";
+      cursorDotOutline.current.style.backgroundColor = "rgba(0,0,0,0.25)";
     } else {
       cursorDot.current.style.transform = "translate(-50%, -50%) scale(1)";
       cursorDotOutline.current.style.transform =
         "translate(-50%, -50%) scale(1)";
-      //   cursorDotOutline.current.style.backgroundColor =
-      //     "rgba(var(--color-cursor), var(--cursor-outline-shade))";
+      cursorDotOutline.current.style.backgroundColor =
+        "rgba(126, 116, 241, 0.25)";
     }
   }
 
@@ -141,7 +139,7 @@ const Cursor = (props) => {
    * to trigger cursor animation
    */
   function handleLinkHovers() {
-    document.querySelectorAll("a, button").forEach((el) => {
+    document.querySelectorAll("a, button, .hover_size").forEach((el) => {
       el.addEventListener("mouseover", () => {
         cursorEnlarged.current = true;
         toggleCursorSize();
@@ -153,8 +151,8 @@ const Cursor = (props) => {
     });
   }
 
-  function handleImagesHovers() {
-    document.querySelectorAll("img").forEach((el) => {
+  function handleColorChange() {
+    document.querySelectorAll(".hover_color").forEach((el) => {
       el.addEventListener("mouseover", () => {
         cursorEnlarged.current = true;
         toggleCursorColor();
