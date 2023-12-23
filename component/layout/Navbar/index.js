@@ -80,7 +80,7 @@ const Navbar = (props) => {
   const dropdownData = [
     { id: 1, title: "Services", link: "#services" },
     { id: 2, title: "Work Experience", link: "#work" },
-    { id: 3, title: "Educarion and Skills", link: "#education" },
+    { id: 3, title: "Education and Skills", link: "#education" },
   ];
 
   const [toggleDropdown, setToggleDropdown] = useState(false);
@@ -163,7 +163,7 @@ const Navbar = (props) => {
               onClick={() => toggleTheme()}
             />
             <Link
-              href="https://docs.google.com/document/d/1---tAsP7qV8BQKDDYl2pbtDnUROGL6tz/edit?usp=sharing&ouid=101181458971393740725&rtpof=true&sd=true"
+              href="https://drive.google.com/file/d/1Zld4QICGWwhSIT9nnNn1aOLAu1YygsH_/view?usp=sharing"
               target="_blank"
             >
               <button
