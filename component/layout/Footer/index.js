@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./footer.module.css";
 import insta from "../../../assets/icons/Instagram.svg";
-import git from "../../../assets/icons/Github.svg";
+import git from "../../../assets/icons/GithubIcon.svg";
 import twitter from "../../../assets/icons/Twitter.svg";
 import linkedin from "../../../assets/icons/Linkedin.svg";
 import Link from "next/link";
