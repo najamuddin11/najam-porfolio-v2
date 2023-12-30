@@ -9,6 +9,7 @@ import PortfolioPopup from "../component/main/home/Portfolio/PortfolioPopup";
 import { clearErrors } from "../state-management/actions/errors";
 import { getHomeData } from "../state-management/actions/home";
 const Portfolio = (props) => {
+  const { getHomeData, clearErrors } = props;
   const [portfolioPopupShow, setPortfolioPopupShow] = useState(false);
   const handlePortfolioPopup = () => {
     setPortfolioPopupShow((prev) => !prev);
@@ -21,10 +22,10 @@ const Portfolio = (props) => {
 
   const portfolioPopup = useRef();
   useEffect(() => {
-    props?.getHomeData();
+    getHomeData();
 
     return () => {
-      props?.clearErrors();
+      clearErrors();
     };
   }, []);
   useEffect(() => {
