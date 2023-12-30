@@ -1,4 +1,4 @@
-import serviceData from "./ServiceData";
+import serviceData from "./serviceData";
 import portfolioData from "./portfolioData";
 import workExperienceData from "./workExperienceData";
 import testimonialsData from "./testimonialsData";
@@ -16,4 +16,4 @@ const homeData = {
   contactData,
 };
 
-export default homeData
+export default homeData;
