@@ -42,7 +42,6 @@ const Contact = (props) => {
   return (
     <section id="contact">
       <div className="container">
-        {console.log(errors)}
         <h5>Contact me</h5>
         <h2>Contact me</h2>
         <div className={`${styles.contact_inner_container}`}>
@@ -51,7 +50,6 @@ const Contact = (props) => {
               onSubmit={handleSubmit}
               className={`${styles.form_container}`}
             >
-              {console.log(status, "Status")}
               {status &&
                 (status === 200 ? (
                   <div

@@ -10,7 +10,6 @@ exports.contactFormRules = () => {
 };
 
 exports.validateContactForm = (req, res, next) => {
-  // console.log(req.body);
   const errors = validationResult(req);
   if (errors.isEmpty()) {
     return next();
@@ -18,11 +17,6 @@ exports.validateContactForm = (req, res, next) => {
   const extractedErrors = {};
 
   errors.array().map((err) => (extractedErrors[err.param] = err.msg));
-
-  // errors
-  //   .array()
-  //   .map((err) => extractedErrors.push({ msg: err.msg, param: err.param }));
-  // console.log(extractedErrors);
 
   return res.status(422).json({
     validationErrors: extractedErrors,

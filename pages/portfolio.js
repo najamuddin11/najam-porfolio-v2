@@ -44,7 +44,6 @@ const Portfolio = (props) => {
           </Popup>
         )}
       </div>
-      {console.log(portfolioPopupShow)}
       <Navbar />
       <SecondaryHeader />
       <AllPortfolio

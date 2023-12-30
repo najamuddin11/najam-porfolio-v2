@@ -24,17 +24,6 @@ app
       "http://127.0.0.1:3000",
       "https://najam.in",
     ];
-    // var corsOptions = {
-    //   credentials: true,
-    //   origin: (origin, callback) => {
-    //     console.log("here", origin);
-    //     if (whitelist.includes(origin)) {
-    //       callback(null, true);
-    //     } else {
-    //       callback(new Error("Not allowed by CORS"));
-    //     }
-    //   },
-    // };
 
     server.use(cors());
 
