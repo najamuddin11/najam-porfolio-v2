@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./work-experience.module.css";
 import Image from "next/image";
 import right_light from "../../../../assets/icons/chevron-right-light.svg";

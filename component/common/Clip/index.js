@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./clip.module.css";
 import check_dark from "../../../assets/icons/check-dark.svg";
-import check_light from "../../../assets/icons/check-light.svg";
-import down_dark from "../../../assets/icons/chevron-down-dark.svg";
-import down_light from "../../../assets/icons/chevron-down-light.svg";
-import up_dark from "../../../assets/icons/chevron-up-dark.svg";
-import up_light from "../../../assets/icons/chevron-up-light.svg";
 import Image from "next/image";
 import useWindowSize from "../../hooks/useWindowSize";
 import { connect } from "react-redux";

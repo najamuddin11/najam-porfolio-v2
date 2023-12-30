@@ -9,7 +9,6 @@ import Testimonials from "../component/main/home/Testimonials";
 import WorkExperience from "../component/main/home/WorkExperience";
 import { clearErrors } from "../state-management/actions/errors";
 import { getHomeData } from "../state-management/actions/home";
-import HeaderParticles from "../component/layout/HeaderParticles";
 import Contact from "../component/main/home/Contact";
 import Footer from "../component/layout/Footer";
 import { useState } from "react";

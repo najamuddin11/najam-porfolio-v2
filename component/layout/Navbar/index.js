@@ -8,7 +8,6 @@ import barIcon from "../../../assets/icons/bars-solid.svg";
 import barIconDark from "../../../assets/icons/bars-solid-dark.svg";
 
 import moon from "../../../assets/icons/moon.svg";
-import moon_light from "../../../assets/icons/moon-light.svg";
 import sun from "../../../assets/icons/Sun.svg";
 import ellipse_dark from "../../../assets/icons/ellipse-dark.svg";
 import ellipse_light from "../../../assets/icons/ellipse-light.svg";
@@ -86,13 +85,7 @@ const Navbar = (props) => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   return (
-    <div
-      className={`${styles.navbar}`}
-      //   style={{
-      //     height: isScrollable ? "80px" : "70px",
-      //     background: isScrollable ? "rgba(0,0,0,0)" : "var(--bg-navbar)",
-      //   }}
-    >
+    <div className={`${styles.navbar}`}>
       <div className={`container ${styles.nav}`}>
         <div className={`${styles.inner_container}`}>
           <div>
@@ -208,7 +201,7 @@ const Navbar = (props) => {
               />
               Home
             </a>
-            {/* <div className={styles.splitter} /> */}
+
             <div
               className={styles.nav_dropdown}
               onClick={() => setToggleDropdown(!toggleDropdown)}
@@ -240,7 +233,7 @@ const Navbar = (props) => {
                 />
               )}
             </div>
-            {/* <div className={styles.splitter} /> */}
+
             <a
               href="#portfolio"
               className={styles.nav_anchor}
@@ -252,7 +245,7 @@ const Navbar = (props) => {
               />
               Portfolio
             </a>
-            {/* <div className={styles.splitter} /> */}
+
             <a
               href="#contact"
               className={styles.nav_anchor}
@@ -264,7 +257,7 @@ const Navbar = (props) => {
               />
               Contact
             </a>
-            {/* <div className={styles.splitter} /> */}
+
             <div className={styles.splitter} />
 
             <div className={styles.mobile_theme_toggle_container}>

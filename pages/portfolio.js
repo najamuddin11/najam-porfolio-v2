@@ -2,19 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 import { connect } from "react-redux";
 import Popup from "../component/common/popup/Popup";
 import Footer from "../component/layout/Footer";
-import Header from "../component/layout/Header";
 import SecondaryHeader from "../component/layout/Header/SecondaryHeader";
 import Navbar from "../component/layout/Navbar";
-import Portfolio from "../component/main/home/Portfolio";
 import AllPortfolio from "../component/main/home/Portfolio/AllPortfolio";
 import PortfolioPopup from "../component/main/home/Portfolio/PortfolioPopup";
 import { clearErrors } from "../state-management/actions/errors";
 import { getHomeData } from "../state-management/actions/home";
-const portfolio = (props) => {
+const Portfolio = (props) => {
   const [portfolioPopupShow, setPortfolioPopupShow] = useState(false);
   const handlePortfolioPopup = () => {
     setPortfolioPopupShow((prev) => !prev);
   };
+
   const [portfolioPopupData, setPortfolioPopupData] = useState();
   const handlePortfolioPopupData = (data) => {
     setPortfolioPopupData(data);
@@ -61,5 +60,5 @@ const mapStateToProps = (state) => ({
   homeData: state.homeData,
 });
 export default connect(mapStateToProps, { clearErrors, getHomeData })(
-  portfolio
+  Portfolio
 );

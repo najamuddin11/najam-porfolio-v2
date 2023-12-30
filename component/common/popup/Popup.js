@@ -7,11 +7,6 @@ const Popup = (props) => {
     props.handlePopup();
   }
   const popup = useRef();
-  useEffect(() => {
-    return () => {
-      // document.body.style.overflowY = "auto";
-    };
-  }, []);
 
   return (
     <div className={`${styles.popup}`} onClick={closeModalDone} ref={popup}>

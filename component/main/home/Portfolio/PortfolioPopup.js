@@ -4,21 +4,13 @@ import styles from "./portfolio-popup.module.css";
 import Image from "next/image";
 import Clip from "../../../common/Clip";
 import Link from "next/link";
-import arrow from "../../../../assets/icons/arrow.svg";
 
 const PortfolioPopup = (props) => {
   const { portfolioPopupData } = props;
 
   return (
     <div className={`${styles.portfolio_popup_inner_container}`}>
-      <div
-        className={`${styles.portfolio_popup_header}`}
-        // style={{
-        //   background:
-        //     portfolioPopupData?.projectColor &&
-        //     portfolioPopupData?.projectColor,
-        // }}
-      >
+      <div className={`${styles.portfolio_popup_header}`}>
         <div className={`${styles.portfolio_popup_title}`}>
           {portfolioPopupData?.projectLogo ? (
             <Image
@@ -58,11 +50,6 @@ const PortfolioPopup = (props) => {
                   rel="noopener noreferrer"
                 >
                   click here{" "}
-                  {/* <Image
-                    className={`${styles.arrow_image}`}
-                    src={arrow}
-                    alt="..."
-                  /> */}
                 </Link>{" "}
               </span>
             )}
@@ -75,12 +62,6 @@ const PortfolioPopup = (props) => {
             </div>
             <div className={`${styles.portfolio_popup_content}`}>
               {portfolioPopupData?.whatIdid}
-
-              {/* <div className="portfolio_popup_content_list">
-              {portfolioPopupData?.resposibilities.map((item) => (
-                <div className="portfolio_popup_content_list_item">{item}</div>
-              ))}
-            </div> */}
             </div>
           </div>
         )}

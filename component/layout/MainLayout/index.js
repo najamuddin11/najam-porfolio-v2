@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { clearErrors } from "../../../state-management/actions/errors";
 import { initTheme } from "../../../state-management/actions/theme";
 import Cursor from "../Cursor";
-import HeaderParticles from "../HeaderParticles";
 
 const MainLayout = (props) => {
   const { children, initTheme, themeMode } = props;

@@ -1,7 +1,5 @@
 import dynamic from "next/dynamic";
 import { Provider } from "react-redux";
-// import MainLayout from "../component/layout/MainLayout";
-
 const MainLayout = dynamic(() => import("../component/layout/MainLayout"), {
   ssr: false,
 });
@@ -15,7 +13,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Head from "next/head";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   return (

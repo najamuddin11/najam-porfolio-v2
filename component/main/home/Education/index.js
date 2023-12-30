@@ -1,8 +1,6 @@
-import Image from "next/image";
 import React, { useEffect } from "react";
 import Clip from "../../../common/Clip";
 import styles from "./education.module.css";
-import circle from "../../../../assets/icons/check-dark.svg";
 
 const Education = (props) => {
   const { education, skills } = props;
