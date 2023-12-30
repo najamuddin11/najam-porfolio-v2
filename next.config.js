@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  output: "exports",
-  ignoreDuringBuilds: true,
+  output: "page", // or "standalone" based on your requirements
 };
 
 module.exports = nextConfig;
