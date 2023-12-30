@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: "exports",
   ignoreDuringBuilds: true,
 };
 
