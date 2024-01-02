@@ -1,10 +1,8 @@
 const express = require("express");
 var cors = require("cors");
-var csurf = require("csurf");
 var cookieParser = require("cookie-parser");
 var csrf = require("csurf");
 const next = require("next");
-const { parse } = require("url");
 
 const dev = process.env.NODE_ENV !== "production";
 const PORT = process.env.PORT || 3000;
@@ -12,7 +10,6 @@ const PORT = process.env.PORT || 3000;
 const app = next({ dir: ".", dev });
 
 const handle = app.getRequestHandler();
-// const getRoutes = require('./routes')
 
 app
   .prepare()
@@ -23,6 +20,7 @@ app
       "http://localhost:3000",
       "http://127.0.0.1:3000",
       "https://najam.in",
+      "https://najamuddin11.github.io/najam-porfolio-v2/",
     ];
 
     server.use(cors());
@@ -79,9 +77,6 @@ app
     const main = require("./server/routes/main/main");
 
     server.use("/api", main);
-    // server.get("/api/test", (req, res) => {
-    //   res.end("hello world");
-    // });
 
     server.get("*", (req, res) => {
       return handle(req, res);
