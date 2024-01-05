@@ -3,7 +3,6 @@ const { body, validationResult } = require("express-validator");
 exports.contactFormRules = () => {
   return [
     body("name").notEmpty().escape().withMessage("Field is Required"),
-
     body("email").isEmail().escape().withMessage("Email is Invalid"),
     body("message").notEmpty().escape().withMessage("Field is Required"),
   ];

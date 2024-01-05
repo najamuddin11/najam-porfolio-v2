@@ -17,10 +17,9 @@ app
     const server = express();
 
     const whitelist = [
-      "http://localhost:3000",
-      "http://127.0.0.1:3000",
       "https://najam.in",
       "https://najamuddin11.github.io",
+      "http://najam.in",
     ];
 
     server.use(cors());
