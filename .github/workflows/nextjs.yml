@@ -94,6 +94,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
        - name: Start Server
-        run:
-          # Command to start the server after deployment
-          node server.js
+        run: 
+          npm run dev 
+          fi
