@@ -16,7 +16,11 @@ app
   .then(() => {
     const server = express();
 
-    const whitelist = ["https://najam.vercel.app", "https://najam.in"];
+    const whitelist = [
+      "https://najam.vercel.app",
+      "https://najam.in",
+      "https://najamuddin11.github.io",
+    ];
 
     server.use(cors());
 
