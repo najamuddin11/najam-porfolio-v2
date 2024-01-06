@@ -17,6 +17,7 @@ app
     const server = express();
 
     const whitelist = [
+      "https://najam-porfolio-v2.vercel.app/",
       "https://najam.in",
       "https://najamuddin11.github.io",
       "http://najam.in",
