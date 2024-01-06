@@ -6,9 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
-import right_dark from "../../../../assets/icons/chevron-right-dark.svg";
 import left_dark from "../../../../assets/icons/left-dark.svg";
-import right_light from "../../../../assets/icons/chevron-right-purple.svg";
 import left_light from "../../../../assets/icons/left-light.svg";
 import Link from "next/link";
 import arrow from "../../../../assets/icons/arrow.svg";
@@ -87,7 +85,8 @@ const Portfolio = (props) => {
               onClick={() => handleClick("next")}
             >
               <Image
-                src={themeMode === "dark" ? right_dark : right_light}
+                style={{ transform: "rotate(180deg)" }}
+                src={themeMode === "dark" ? left_dark : left_light}
                 alt="right icon"
               />
             </div>
