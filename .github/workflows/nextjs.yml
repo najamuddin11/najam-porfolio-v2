@@ -96,9 +96,9 @@ jobs:
       - name: Start Server
         run: |
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            yarn run dev
+            node server.js
           elif [ -f "${{ github.workspace }}/package.json" ]; then
-            npm run dev
+            node server.js
           else
             echo "Unable to determine package manager"
             exit 1
