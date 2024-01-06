@@ -93,7 +93,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-       - name: Start Server
-        run: 
-          npm run dev 
-          fi
