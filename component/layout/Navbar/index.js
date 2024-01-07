@@ -155,10 +155,7 @@ const Navbar = (props) => {
               className={`hover_size ${styles.theme_toggler}`}
               onClick={() => toggleTheme()}
             />
-            <Link
-              href="https://drive.google.com/file/d/14xqtXlynDZ8MhqCjdHefUiRHAwqwvaM2/view?usp=sharing"
-              target="_blank"
-            >
+            <Link href={process.env.NEXT_PUBLIC_RESUME_PATH} target="_blank">
               <button
                 onMouseMove={(e) => onMouseMove(e)}
                 className={`${styles.resume_btn}`}
@@ -285,10 +282,7 @@ const Navbar = (props) => {
                 />
               </div>
             </div>
-            <Link
-              href="https://docs.google.com/document/d/1---tAsP7qV8BQKDDYl2pbtDnUROGL6tz/edit?usp=sharing&ouid=101181458971393740725&rtpof=true&sd=true"
-              target="_blank"
-            >
+            <Link href={process.env.NEXT_PUBLIC_RESUME_PATH} target="_blank">
               <button
                 style={{ marginTop: "40px" }}
                 onMouseMove={(e) => onMouseMove(e)}
