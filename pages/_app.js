@@ -13,7 +13,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Head from "next/head";
-
+import axios from "axios";
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_PATH;
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>

@@ -15,7 +15,7 @@ export const postContact =
     dispatch(clearErrors());
     handleLoading(true);
     axios
-      .post("/api/send", contactForm, {
+      .post(`api/send`, contactForm, {
         withCredentials: true,
       })
       .then((res) => {
