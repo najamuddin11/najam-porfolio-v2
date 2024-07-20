@@ -16,4 +16,4 @@ Welcome to my portfolio! This website serves as a platform to display my project
 
 ## Output
 
-You can view the live version of this portfolio [here](https://najam.in).
+You can view the live version of this portfolio [here](https://najam.vercel.app).
